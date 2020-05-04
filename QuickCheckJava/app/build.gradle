@@ -1,11 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
+    // 1. set to the latest compileSdkVersion
     compileSdkVersion 29
     buildToolsVersion "29.0.3"
 
     defaultConfig {
         applicationId "com.numericcal.pnt.quickcheckjava"
+        // 2. set minSdkVersion to 24
         minSdkVersion 24
         targetSdkVersion 29
         versionCode 1
@@ -21,9 +23,19 @@ android {
         }
     }
 
+    // 3. enable Java 8
+    android {
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_8
+            targetCompatibility JavaVersion.VERSION_1_8
+        }
+    }
 }
 
 dependencies {
+    // 4. add the QuickCheck SDK dependency (adjust the version as desired)
+    implementation "com.numericcal.sdk.pnt:quickcheck:0.2.2"
+
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
     implementation 'androidx.appcompat:appcompat:1.1.0'
