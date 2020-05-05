@@ -25,7 +25,6 @@ import java.util.logging.Logger;
 public class SecondFragment extends Fragment {
 
     private QuickCheck qc;
-    private LiveCameraFeed viewFeed;
     private String QUICKCHECK_CLIENT_ID = "your client id";
     private String QUICKCHECK_CLIENT_SECRET = "your service key";
     private View view;
@@ -53,7 +52,7 @@ public class SecondFragment extends Fragment {
     private void setupQuickCheckService() {
         ////////////////////////////////////////////////////////////////////////////////////////////
         // set up QuickCheck service
-        viewFeed = view.findViewById(R.id.quickcheck_live_feed);
+        LiveCameraFeed viewFeed = view.findViewById(R.id.quickcheck_live_feed);
         CompletableFuture<QuickCheck> qcFuture = QuickCheck.Static.getInstance(
                 this,
                 viewFeed,
