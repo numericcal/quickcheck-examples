@@ -8,8 +8,8 @@
 
     <com.numericcal.pnt.qc.LiveCameraFeed
         android:id="@+id/quickcheck_live_feed"
-        android:layout_width="1200px"
-        android:layout_height="900px"
+        android:layout_width="1400px"
+        android:layout_height="1050px"
         android:hardwareAccelerated="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/resume_button"
