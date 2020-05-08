@@ -22,7 +22,7 @@ allprojects {
         jcenter()
         // add numericcal storehouse repository
         maven {
-            url "${numericcal_storehouse_url}"
+            url "${numericcal_storehouse_quickcheck_repo}"
             credentials {
                 username = "${numericcal_storehouse_username}"
                 password "${numericcal_storehouse_password}"

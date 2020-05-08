@@ -34,7 +34,7 @@ android {
 
 dependencies {
     // 4. add the QuickCheck SDK dependency (adjust the version as desired)
-    implementation "com.numericcal.sdk.pnt:quickcheck:0.4.5"
+    implementation "com.numericcal.sdk.pnt:quickcheck:0.5.0-alpha"
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
